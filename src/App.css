@@ -110,3 +110,30 @@
   border-color: #61dafb;
   outline: none;
 }
+/* src/App.css */
+/* Other styles... */
+
+.recipe-item {
+  cursor: pointer;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.recipe-item:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.recipe-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 5px;
+  object-fit: cover;
+}

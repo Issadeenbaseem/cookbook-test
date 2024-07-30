@@ -8,14 +8,17 @@ const recipes = [
     author: "Jim",
     name: "Chicken Curry",
     description: "Delicious spicy chicken curry",
+    image: "https://via.placeholder.com/150" // Replace with actual image URL
   },
   {
     author: "Aravind",
     name: "Hamburger",
     description: "Juicy burger with toppings and a soft bun",
+    image: "https://via.placeholder.com/150" // Replace with actual image URL
   },
-  // Add more recipes if needed
+  // Add more recipes with images if needed
 ];
+
 
 function App() {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
