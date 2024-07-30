@@ -19,18 +19,27 @@ const recipes = [
 
 function App() {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredRecipes = recipes.filter(recipe =>
+    recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Recipe Book</h1>
-        <div className="App-logo">
-          {/* Add a logo here if needed */}
-        </div>
+        <input
+          type="text"
+          placeholder="Search recipes..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-input"
+        />
       </header>
       <div className="App-content">
         <div className="left-panel">
-          <RecipeList recipes={recipes} onSelectRecipe={setSelectedRecipe} />
+          <RecipeList recipes={filteredRecipes} onSelectRecipe={setSelectedRecipe} />
         </div>
         <div className="right-panel">
           <RecipeDetails recipe={selectedRecipe} />
