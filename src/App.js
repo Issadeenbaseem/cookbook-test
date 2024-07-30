@@ -8,17 +8,18 @@ const recipes = [
     author: "Jim",
     name: "Chicken Curry",
     description: "Delicious spicy chicken curry",
-    image: "https://via.placeholder.com/150" // Replace with actual image URL
+    image: "https://kitchenofdebjani.com/wp-content/uploads/2023/04/easy-indian-chicken-curry-Recipe-for-beginners-Debjanir-rannaghar.jpg", // Replace with the actual direct image URL
+    rating: 4
   },
   {
     author: "Aravind",
     name: "Hamburger",
     description: "Juicy burger with toppings and a soft bun",
-    image: "https://via.placeholder.com/150" // Replace with actual image URL
+    image: "https://baliktanawcafe.com/wp-content/uploads/2023/12/Wu_Humberger.jpg", // Replace with the actual direct image URL
+    rating: 5
   },
-  // Add more recipes with images if needed
+  // Add more recipes with images and ratings if needed
 ];
-
 
 function App() {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
