@@ -93,6 +93,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   margin: auto;
+  text-align: left; /* Align text to the left for better readability */
 }
 
 .recipe-details h2 {
@@ -106,9 +107,30 @@
   color: #666;
 }
 
-.recipe-details img {
+.recipe-detail-image {
   width: 100%;
+  height: auto; 
   border-radius: 8px;
+  object-fit: cover; 
+  max-height: 400px; 
+}
+
+@media (max-width: 768px) {
+  .recipe-details {
+    padding: 10px;
+  }
+
+  .recipe-detail-image {
+    max-height: 300px; 
+  }
+}
+.App-footer {
+  background: #282c34;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
